@@ -1,17 +1,13 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:projeto_experimentacao_orientada/Constants/types_user.dart';
 import 'package:projeto_experimentacao_orientada/Model/users.dart';
-import 'package:projeto_experimentacao_orientada/View/swich_add_new_user.dart';
 import 'package:projeto_experimentacao_orientada/database/user_database.dart';
 
 class CreateUserScreen extends StatelessWidget {
-  CreateUserScreen({Key? key}) : super(key: key);
+  const CreateUserScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-
     UserDatabase userDatabase = UserDatabase();
     return Scaffold(
       appBar: AppBar(
@@ -24,7 +20,7 @@ class CreateUserScreen extends StatelessWidget {
           },
         ),
       ),
-      body: SwitchAnimationColunm(),
+      body: const Placeholder(),
     );
   }
 }
